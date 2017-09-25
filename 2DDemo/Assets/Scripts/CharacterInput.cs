@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterInput : MonoBehaviour {
 
+
+
     [SerializeField]
     float checkDistance, jumpPower, jumpCount, maxJumps;
     [SerializeField]
@@ -45,9 +47,10 @@ public class CharacterInput : MonoBehaviour {
     {
         if (Input.GetButton("Horizontal"))
         {
+            
             Vector3 position = this.transform.position;
             position.x = position.x - (Input.GetAxis("Horizontal") * speed);
-            this.transform.position = position;
+            this.transform.position = position; 
         }
 
         if (Input.GetButtonDown("Jump"))

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2daa3cf51f2031043b65e65c03178cd9
-timeCreated: 1505851257
+guid: 2620eaffe83a3ad4dbb50e9706edd964
+timeCreated: 1506362093
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -98,7 +98,357 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: elisa-spritesheet1_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 454
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 454
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 454
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_3
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 454
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_4
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 454
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 454
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 454
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_9
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_11
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 337
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 337
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_13
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 337
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 337
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_15
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 337
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_16
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 337
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_17
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 337
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_18
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 337
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_19
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 271
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_20
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 271
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_21
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 271
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 206
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_23
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 206
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elisa-spritesheet1_24
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 207
+        width: 88
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

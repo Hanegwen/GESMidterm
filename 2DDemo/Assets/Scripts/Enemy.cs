@@ -8,18 +8,25 @@ public class Enemy : MonoBehaviour {
     LayerMask BulletLayer;
 
     [SerializeField]
+    LayerMask WallLayer;
+
+    [SerializeField]
     float health;
 
     float DamageTaken;
 
+    EnemyStates enemyStates;
+
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        enemyStates = GetComponent<EnemyStates>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        Death();
 	}
 
     void OnTriggerEnter2D(Collider2D other)
@@ -31,5 +38,21 @@ public class Enemy : MonoBehaviour {
             health = health - DamageTaken;
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
+        {
+            enemyStates.Flip();
+        }
+    }
+
+    void Death()
+    {
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
