@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 2620eaffe83a3ad4dbb50e9706edd964
-timeCreated: 1506362093
-licenseType: Pro
+timeCreated: 1506973428
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: elisa-spritesheet1_0
@@ -355,10 +355,10 @@ TextureImporter:
       name: elisa-spritesheet1_18
       rect:
         serializedVersion: 2
-        x: 404
-        y: 337
-        width: 54
-        height: 54
+        x: 5
+        y: 271
+        width: 89
+        height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,8 +369,8 @@ TextureImporter:
       name: elisa-spritesheet1_19
       rect:
         serializedVersion: 2
-        x: 5
-        y: 271
+        x: 97
+        y: 206
         width: 89
         height: 62
       alignment: 0
@@ -383,8 +383,8 @@ TextureImporter:
       name: elisa-spritesheet1_20
       rect:
         serializedVersion: 2
-        x: 97
-        y: 271
+        x: 5
+        y: 206
         width: 89
         height: 62
       alignment: 0
@@ -397,12 +397,12 @@ TextureImporter:
       name: elisa-spritesheet1_21
       rect:
         serializedVersion: 2
-        x: 189
+        x: 97
         y: 271
         width: 89
         height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -411,12 +411,12 @@ TextureImporter:
       name: elisa-spritesheet1_22
       rect:
         serializedVersion: 2
-        x: 5
-        y: 206
+        x: 189
+        y: 271
         width: 89
         height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,12 +425,12 @@ TextureImporter:
       name: elisa-spritesheet1_23
       rect:
         serializedVersion: 2
-        x: 97
+        x: 189
         y: 206
         width: 89
         height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -439,12 +439,12 @@ TextureImporter:
       name: elisa-spritesheet1_24
       rect:
         serializedVersion: 2
-        x: 189
-        y: 207
-        width: 88
-        height: 61
+        x: 404
+        y: 337
+        width: 54
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

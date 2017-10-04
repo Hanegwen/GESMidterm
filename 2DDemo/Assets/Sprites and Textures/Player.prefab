@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114892663939201274}
   - component: {fileID: 61329191790100180}
   - component: {fileID: 114166279066920142}
+  - component: {fileID: 95923004550608040}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -119,6 +120,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36135817, y: 0.42162275}
   m_EdgeRadius: 0
+--- !u!95 &95923004550608040
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1953880128332078}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 733f0353cc5838343861374e15621591, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114166279066920142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,9 +164,10 @@ MonoBehaviour:
   jumpPower: 300
   jumpCount: 0
   maxJumps: 2
-  speed: 0.2
+  speed: 4
   jumpingHeight: 0.2
   isOnGround: 0
+  facingRight: 1
   jumpCheckTransform: {fileID: 4104959816389064}
   groundMask:
     serializedVersion: 2

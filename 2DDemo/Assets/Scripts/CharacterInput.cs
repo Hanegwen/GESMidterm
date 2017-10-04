@@ -18,6 +18,9 @@ public class CharacterInput : MonoBehaviour {
     bool isOnGround;
 
     [SerializeField]
+    bool facingRight = true;
+
+    [SerializeField]
     Transform jumpCheckTransform;
 
     [SerializeField]
@@ -28,16 +31,23 @@ public class CharacterInput : MonoBehaviour {
     [SerializeField]
     GameObject Bullet;
 
+    Animator PlayerAnimation;
+
+    float Move;
+
 
     // Use this for initialization
     void Start ()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        PlayerAnimation = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
 	void FixedUpdate ()
     {
+
+        
         MovePlayer();
         CheckGound();
         shootObject();
@@ -45,12 +55,21 @@ public class CharacterInput : MonoBehaviour {
 
     void MovePlayer()
     {
+        
         if (Input.GetButton("Horizontal"))
         {
-            
-            Vector3 position = this.transform.position;
-            position.x = position.x - (Input.GetAxis("Horizontal") * speed);
-            this.transform.position = position; 
+            Move = Input.GetAxis("Horizontal");
+            PlayerAnimation.SetFloat("Speed", Mathf.Abs(Move));
+            rb2d.velocity = new Vector2(Move * speed, rb2d.velocity.y);
+
+            if (Move > 0 && !facingRight)
+            {
+                Flip();
+            }
+            else if (Move < 0 && facingRight)
+            {
+                Flip();
+            }
         }
 
         if (Input.GetButtonDown("Jump"))
@@ -74,10 +93,13 @@ public class CharacterInput : MonoBehaviour {
         if (hit.collider == true)
         {
             isOnGround = true;
+            
 
         }
         else
             isOnGround = false;
+
+        PlayerAnimation.SetBool("GroundCheck", isOnGround);
     }
 
 
@@ -104,5 +126,13 @@ public class CharacterInput : MonoBehaviour {
             Debug.Log("Out of Jumps");
         }
 
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 TheScale = transform.localScale;
+        TheScale.x *= -1;
+        transform.localScale = TheScale;
     }
 }

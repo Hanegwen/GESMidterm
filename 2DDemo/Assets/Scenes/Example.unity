@@ -155,11 +155,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4958945095470042, guid: 925f5604474600d45aa6f239489aafe2,
     type: 2}
   m_PrefabInternal: {fileID: 223536878}
---- !u!1 &325134152 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1613075682080504, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-    type: 2}
-  m_PrefabInternal: {fileID: 2027244508}
 --- !u!1 &578802015
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,66 +610,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1613075682080504, guid: 1c9b203209ce6fb4c898ee5f8ed91363, type: 2}
-      propertyPath: m_Name
-      value: 'Enemy '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114919020488076094, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: Fireball
-      value: 
-      objectReference: {fileID: 1018934690152586, guid: e29e382f921b2754a88d8764359ad63b,
-        type: 2}
-    - target: {fileID: 114919020488076094, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: MoveSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114919020488076094, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: PatrolSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114919020488076094, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: attackSpeed
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 114919020488076094, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
         type: 2}
       propertyPath: MagicCast
       value: 
       objectReference: {fileID: 1018934690152586, guid: e29e382f921b2754a88d8764359ad63b,
         type: 2}
-    - target: {fileID: 114919020488076094, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: castPosition
-      value: 
-      objectReference: {fileID: 325134152}
-    - target: {fileID: 114919020488076094, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: PlayerLayer.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 61961263511997588, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50160835861412614, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 61961263511997588, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: -0.0287714
-      objectReference: {fileID: 0}
-    - target: {fileID: 61961263511997588, guid: 1c9b203209ce6fb4c898ee5f8ed91363,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.39754283
+    - target: {fileID: 1613075682080504, guid: 1c9b203209ce6fb4c898ee5f8ed91363, type: 2}
+      propertyPath: m_Name
+      value: 'Enemy '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c9b203209ce6fb4c898ee5f8ed91363, type: 2}
