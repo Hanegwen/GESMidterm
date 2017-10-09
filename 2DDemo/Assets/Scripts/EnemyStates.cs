@@ -86,12 +86,12 @@ public class EnemyStates : MonoBehaviour
             case States.patrol_Search:
 
 
-                if (distance < 0)
+                if (distance < 2)
                 {
                     myRigidbody.velocity = new Vector2(transform.localScale.x * PatrolSpeed, myRigidbody.velocity.y);
                 }
 
-                if (distance > 3)
+                if (distance > 5)
                 {
                     myRigidbody.velocity = new Vector2(transform.localScale.x * -PatrolSpeed, myRigidbody.velocity.y);
 
@@ -121,15 +121,7 @@ public class EnemyStates : MonoBehaviour
                 }
                 break;
 
-            case States.attack_Recharge:
-                break;
-
-            case States.attack_Results:
-                break;
-
-            case States.attack_Over:
-                break;
-
+ 
             default:
                 MovetoPlayer();
                 break;
@@ -163,7 +155,15 @@ public class EnemyStates : MonoBehaviour
     {
 
         if (playerFound == true)
-            transform.Translate(new Vector3(MoveSpeed * Time.deltaTime, 0, 0));
+            if (Player.transform.position.x - this.transform.position.x > 0)
+            {
+                transform.Translate(new Vector3(MoveSpeed * Time.deltaTime, 0, 0)); //Right
+            }
+
+        else
+            {
+                transform.Translate(new Vector3(MoveSpeed * Time.deltaTime * -1, 0, 0)); //Left
+            }
 
 
     }
