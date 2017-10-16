@@ -45,6 +45,7 @@ public class Enemy : MonoBehaviour {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             enemyStates.Flip();
+            
         }
     }
 

@@ -130,9 +130,8 @@ public class CharacterInput : MonoBehaviour {
 
     void Flip()
     {
+
+        this.gameObject.transform.Rotate(0, 180, 0);
         facingRight = !facingRight;
-        Vector3 TheScale = transform.localScale;
-        TheScale.x *= -1;
-        transform.localScale = TheScale;
     }
 }

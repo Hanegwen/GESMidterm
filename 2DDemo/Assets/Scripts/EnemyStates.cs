@@ -182,10 +182,10 @@ public class EnemyStates : MonoBehaviour
 
     public void Flip()
     {
-
-        Vector3 enemyScale = transform.localScale;
+        this.gameObject.transform.Rotate(0, 180, 0);
+        /*Vector3 enemyScale = transform.localScale;
         enemyScale.x *= -1;
-        transform.localScale = enemyScale;
+        transform.localScale = enemyScale;*/
     }
 
     void AutoAttack()
