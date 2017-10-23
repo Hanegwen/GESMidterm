@@ -38,16 +38,13 @@ public class Enemy : MonoBehaviour {
             health = health - DamageTaken;
         }
 
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             enemyStates.Flip();
-            
         }
+
     }
+
 
     void Death()
     {

@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 114906491925679332}
   m_Layer: 10
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,6 +151,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 15
   dead: 0
+  EnemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  EnemyAttackLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &114892663939201274
 MonoBehaviour:
   m_ObjectHideFlags: 1

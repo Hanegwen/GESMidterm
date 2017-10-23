@@ -10,7 +10,11 @@ public class CharacterStats : MonoBehaviour {
     [SerializeField]
     public bool dead = false;
 
+    [SerializeField]
     LayerMask EnemyLayer;
+
+    [SerializeField]
+    LayerMask EnemyAttackLayer;
 
 	// Use this for initialization
 	void Start ()
@@ -24,5 +28,11 @@ public class CharacterStats : MonoBehaviour {
 		
 	}
 
-    
+    public float TakeDamage(float Damage)
+    {
+        health -= Damage;
+
+        return Damage;
+    }
+
 }
