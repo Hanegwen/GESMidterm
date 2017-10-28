@@ -569,6 +569,11 @@ Prefab:
       propertyPath: BackgroundColor.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23510989896700500, guid: 1bbb5c01d22e005419299dd5bc30874a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bbc04b58d3919214780cca3460f5d732, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bbb5c01d22e005419299dd5bc30874a, type: 2}
   m_IsPrefabParent: 0
@@ -954,23 +959,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4519875051307080, guid: e164828a820ef184795ecf8c2da2173b, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4519875051307080, guid: e164828a820ef184795ecf8c2da2173b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 114166279066920142, guid: e164828a820ef184795ecf8c2da2173b,
+    - target: {fileID: 114892663939201274, guid: e164828a820ef184795ecf8c2da2173b,
         type: 2}
-      propertyPath: EnemyAttackLayer.m_Bits
-      value: 16384
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953880128332078, guid: e164828a820ef184795ecf8c2da2173b, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+      propertyPath: Jump
+      value: 
+      objectReference: {fileID: 8300000, guid: 32f5207acaa8a4943943c85289d251a0, type: 3}
+    - target: {fileID: 114892663939201274, guid: e164828a820ef184795ecf8c2da2173b,
+        type: 2}
+      propertyPath: sounds
+      value: 
+      objectReference: {fileID: 1199159524}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e164828a820ef184795ecf8c2da2173b, type: 2}
   m_IsPrefabParent: 0
@@ -1082,6 +1080,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14378102, y: 1}
   m_EdgeRadius: 0
+--- !u!82 &1199159524 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82547380744066770, guid: e164828a820ef184795ecf8c2da2173b,
+    type: 2}
+  m_PrefabInternal: {fileID: 923091356}
 --- !u!1 &1296447170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +1649,11 @@ Prefab:
     - target: {fileID: 4483298004126882, guid: f5f849f557e8ba1489cacbd4d995ac54, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114226420616212148, guid: f5f849f557e8ba1489cacbd4d995ac54,
+        type: 2}
+      propertyPath: levelCount
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5f849f557e8ba1489cacbd4d995ac54, type: 2}

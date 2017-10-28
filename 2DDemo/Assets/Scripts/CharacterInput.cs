@@ -35,12 +35,27 @@ public class CharacterInput : MonoBehaviour {
 
     float Move;
 
+    [SerializeField]
+    public AudioSource sounds;
+    [SerializeField]
+    AudioClip Shoot;
+
+    [SerializeField]
+    AudioClip Jump;
+
+    [SerializeField]
+    public AudioClip PickUp;
+
+    [SerializeField]
+    public AudioClip Death;
+
 
     // Use this for initialization
     void Start ()
     {
         rb2d = GetComponent<Rigidbody2D>();
         PlayerAnimation = GetComponent<Animator>();
+        
     }
 	
 	// Update is called once per frame
@@ -83,6 +98,8 @@ public class CharacterInput : MonoBehaviour {
         if (Input.GetButtonDown("Fire1"))
         {
             Instantiate(Bullet, new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y) , this.gameObject.transform.rotation);
+            sounds.clip = Shoot;
+            sounds.Play();
         }
     }
 
@@ -111,14 +128,16 @@ public class CharacterInput : MonoBehaviour {
             jumpCount = 0;
             jumpCount++;
             rb2d.AddForce(Vector2.up * jumpPower);
-
+            sounds.clip = Jump;
+            sounds.Play();
         }
 
         else if (isOnGround == false && jumpCount < maxJumps)
         {
             jumpCount++;
             rb2d.AddForce(Vector2.up * jumpPower);
-
+            sounds.clip = Jump;
+            sounds.Play();
         }
 
         else
