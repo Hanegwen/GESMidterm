@@ -59,6 +59,7 @@ public class EnemyStates : MonoBehaviour
         Player = GameObject.Find("Player");
         myRigidbody = GetComponent<Rigidbody2D>();
         currentState = States.patrol;
+        PatrolSpeed = 1;
     }
 
     void FixedUpdate()
@@ -92,9 +93,8 @@ public class EnemyStates : MonoBehaviour
                 MoveSpeed = 3f;
                 MovetoPlayer();
                 Debug.Log(Player.name);
-
-                    AutoAttack();
-
+                AutoAttack();
+                CheckDistance();
                 break;
 
  
@@ -121,21 +121,31 @@ public class EnemyStates : MonoBehaviour
 
     }
 
+    void CheckDistance()
+    {
+        if(Player.transform.position - this.gameObject.transform.position > 10 || Player.transform.position - this.gameObject.transform.position <-10)
+    }
 
     void MovetoPlayer()
     {
 
-        /*if (playerFound == true)
-            if (Player.transform.position.x - this.transform.position.x > 0)
+        if (playerFound == true)
+            if (Player.transform.position.x > this.transform.position.x)
             {
-                transform.Translate(new Vector3(MoveSpeed * Time.deltaTime, 0, 0)); //Right
+                if (!isFlip)
+                {
+                    Flip();
+                }
             }
 
-        else
+            else
             {
-                transform.Translate(new Vector3(MoveSpeed * Time.deltaTime * -1, 0, 0)); //Left
+                if (isFlip)
+                {
+                    Flip();
+                }
             }
-            */
+
 
     }
 
