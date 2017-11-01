@@ -123,7 +123,10 @@ public class EnemyStates : MonoBehaviour
 
     void CheckDistance()
     {
-        if(Player.transform.position - this.gameObject.transform.position > 10 || Player.transform.position - this.gameObject.transform.position <-10)
+        if(Player.transform.position.x - this.gameObject.transform.position.x > 10 || Player.transform.position.x - this.gameObject.transform.position.x <-10)
+        {
+
+        }
     }
 
     void MovetoPlayer()

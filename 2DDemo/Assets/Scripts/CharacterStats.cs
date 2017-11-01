@@ -2,11 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterStats : MonoBehaviour {
 
+    public bool makeDie = false;
+
     [SerializeField]
     public float health;
+
+    [SerializeField]
+    public float lives = 1;
 
     [SerializeField]
     public bool dead = false;
@@ -31,11 +37,30 @@ public class CharacterStats : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        CheckLives();
 		if(dead)
         {
             Death();
         }
+
+        if(makeDie)
+        {
+            DiePlease();
+        }
 	}
+
+    private void CheckLives()
+    {
+        if(lives <= 0)
+        {
+            makeDie = true;
+        }
+    }
+
+    private void DiePlease()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
     private void Death()
     {

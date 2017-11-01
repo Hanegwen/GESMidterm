@@ -10,13 +10,17 @@ public class CharacterCheckPoint : MonoBehaviour {
     [SerializeField]
     Vector2 checkPointPosition;
 
+    Vector2 basePosition;
+
     CharacterStats charStats;
+
 
 	// Use this for initialization
 	void Start ()
     {
         charStats = gameObject.GetComponent<CharacterStats>();
         checkPointPosition = new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y);
+        basePosition = checkPointPosition;
 	}
 	
 	// Update is called once per frame
@@ -38,8 +42,12 @@ public class CharacterCheckPoint : MonoBehaviour {
     {
         if(charStats.dead)
         {
-            this.gameObject.transform.position = new Vector3(checkPointPosition.x, checkPointPosition.y, 0);
-            charStats.dead = false;
+            if (charStats.lives > 0)
+            {
+                this.gameObject.transform.position = new Vector3(checkPointPosition.x, checkPointPosition.y, 0);
+                charStats.dead = false;
+                charStats.lives--;
+            }
         }
     }
 }
