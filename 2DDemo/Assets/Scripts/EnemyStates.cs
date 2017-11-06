@@ -41,7 +41,6 @@ public class EnemyStates : MonoBehaviour
 
     [SerializeField]
     bool isFlip;
-    int numShots = 0, maxShots = 2;
     [SerializeField]
     float attackSpeed;
     [SerializeField]
@@ -51,11 +50,14 @@ public class EnemyStates : MonoBehaviour
     [SerializeField]
     GameObject castPosition;
 
-    // trigger on left, trigger on right
+    Animator enemyAnimator;
+
+ 
 
     // Use this for initialization
     void Start()
     {
+        enemyAnimator = GetComponent<Animator>();
         Player = GameObject.Find("Player");
         myRigidbody = GetComponent<Rigidbody2D>();
         currentState = States.patrol;
@@ -79,7 +81,10 @@ public class EnemyStates : MonoBehaviour
         {
 
             case States.patrol:
-
+                if (distance < 10)
+                {
+                    enemyAnimator.SetFloat("Speed", PatrolSpeed);
+                }
                 myRigidbody.velocity = new Vector2(transform.localScale.x * PatrolSpeed * -1, myRigidbody.velocity.y);
 
                 if(isFlip)
@@ -90,6 +95,7 @@ public class EnemyStates : MonoBehaviour
                 break;
 
             case States.attack:
+                enemyAnimator.SetFloat("Speed", MoveSpeed);
                 MoveSpeed = 3f;
                 MovetoPlayer();
                 Debug.Log(Player.name);

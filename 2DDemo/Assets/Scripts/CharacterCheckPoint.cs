@@ -14,6 +14,7 @@ public class CharacterCheckPoint : MonoBehaviour {
 
     CharacterStats charStats;
 
+    CharacterInput charInput;
 
 	// Use this for initialization
 	void Start ()
@@ -42,12 +43,16 @@ public class CharacterCheckPoint : MonoBehaviour {
     {
         if(charStats.dead)
         {
+            charInput.PlayDeath();
+            
             if (charStats.lives > 0)
             {
                 this.gameObject.transform.position = new Vector3(checkPointPosition.x, checkPointPosition.y, 0);
                 charStats.dead = false;
+                charStats.health = 15;
                 charStats.lives--;
             }
         }
     }
+
 }

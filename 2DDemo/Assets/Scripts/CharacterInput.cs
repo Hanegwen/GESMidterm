@@ -116,7 +116,12 @@ public class CharacterInput : MonoBehaviour {
         else
             isOnGround = false;
 
-        PlayerAnimation.SetBool("GroundCheck", isOnGround);
+        
+    }
+
+    public void PlayDeath()
+    {
+        PlayerAnimation.SetBool("Death", isOnGround);
     }
 
 

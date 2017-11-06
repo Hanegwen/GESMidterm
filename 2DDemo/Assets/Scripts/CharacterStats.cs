@@ -28,10 +28,13 @@ public class CharacterStats : MonoBehaviour {
 
     CharacterInput charInfo;
 
+    Animator playerAnimation;
+
 	// Use this for initialization
 	void Start ()
     {
         charInfo = GetComponent<CharacterInput>();
+        playerAnimation = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -47,10 +50,19 @@ public class CharacterStats : MonoBehaviour {
         {
             DiePlease();
         }
+
+        if(!dead)
+        {
+            playerAnimation.SetBool("Dead", false);
+        }
 	}
 
     private void CheckLives()
     {
+        if(health <= 0)
+        {
+            dead = true;
+        }
         if(lives <= 0)
         {
             makeDie = true;
@@ -59,6 +71,7 @@ public class CharacterStats : MonoBehaviour {
 
     private void DiePlease()
     {
+        Death();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -67,6 +80,7 @@ public class CharacterStats : MonoBehaviour {
 
         charInfo.sounds.clip = charInfo.Death;
         charInfo.sounds.Play();
+        playerAnimation.SetBool("Dead", true);
     }
 
     public float TakeDamage(float Damage)

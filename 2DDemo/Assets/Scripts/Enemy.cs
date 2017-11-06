@@ -17,10 +17,13 @@ public class Enemy : MonoBehaviour {
 
     EnemyStates enemyStates;
 
+    Animator enemyAnimator;
+
 	// Use this for initialization
 	void Start ()
     {
         enemyStates = GetComponent<EnemyStates>();
+        enemyAnimator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -50,7 +53,8 @@ public class Enemy : MonoBehaviour {
     {
         if (health <= 0)
         {
-            Destroy(this.gameObject);
+            enemyAnimator.SetBool("Dead", true);
+            Destroy(this.gameObject, 1);
         }
     }
 }
