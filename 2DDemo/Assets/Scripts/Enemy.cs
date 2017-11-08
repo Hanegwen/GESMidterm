@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour {
     LayerMask WallLayer;
 
     [SerializeField]
-    float health;
+    public float health;
 
     float DamageTaken;
 
