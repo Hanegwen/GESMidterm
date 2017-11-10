@@ -43,7 +43,7 @@ public class CharacterCheckPoint : MonoBehaviour {
     {
         if(charStats.dead)
         {
-            charInput.PlayDeath();
+            charStats.Death();
             
             if (charStats.lives > 0)
             {

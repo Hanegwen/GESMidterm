@@ -75,7 +75,7 @@ public class CharacterStats : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    private void Death()
+    public void Death()
     {
 
         charInfo.sounds.clip = charInfo.Death;

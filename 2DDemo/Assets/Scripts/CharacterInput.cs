@@ -119,10 +119,10 @@ public class CharacterInput : MonoBehaviour {
         
     }
 
-    public void PlayDeath()
-    {
-        PlayerAnimation.SetBool("Death", isOnGround);
-    }
+    //public void PlayDeath()
+    //{
+    //    PlayerAnimation.SetBool("Death", isOnGround);
+    //}
 
 
     void CharacterJump()
