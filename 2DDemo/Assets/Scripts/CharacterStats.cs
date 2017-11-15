@@ -11,6 +11,8 @@ public class CharacterStats : MonoBehaviour {
     [SerializeField]
     public float health;
 
+    public float baseHealth;
+
     [SerializeField]
     public float lives = 1;
 
@@ -35,6 +37,7 @@ public class CharacterStats : MonoBehaviour {
     {
         charInfo = GetComponent<CharacterInput>();
         playerAnimation = GetComponent<Animator>();
+        baseHealth = health;
 	}
 	
 	// Update is called once per frame

@@ -110,20 +110,17 @@ public class CharacterInput : MonoBehaviour {
         if (hit.collider == true)
         {
             isOnGround = true;
-            
+            PlayerAnimation.SetBool("GroundCheck", true);
 
         }
         else
+        {
             isOnGround = false;
+            PlayerAnimation.SetBool("GroundCheck", false);
+        }
 
         
     }
-
-    //public void PlayDeath()
-    //{
-    //    PlayerAnimation.SetBool("Death", isOnGround);
-    //}
-
 
     void CharacterJump()
     {

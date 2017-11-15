@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour {
         if (health <= 0)
         {
             enemyAnimator.SetBool("Dead", true);
-            Destroy(this.gameObject, 1);
+            Destroy(this.gameObject, 1.5f);
         }
     }
 }

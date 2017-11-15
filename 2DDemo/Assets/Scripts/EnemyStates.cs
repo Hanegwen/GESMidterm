@@ -52,6 +52,9 @@ public class EnemyStates : MonoBehaviour
 
     Animator enemyAnimator;
 
+    [SerializeField]
+    float attackTimer = 0;
+
  
 
     // Use this for initialization
@@ -84,6 +87,10 @@ public class EnemyStates : MonoBehaviour
                 if (distance < 10)
                 {
                     enemyAnimator.SetFloat("Speed", PatrolSpeed);
+                    if (distance < 5)
+                    {
+                        currentState = States.attack;
+                    }
                 }
                 myRigidbody.velocity = new Vector2(transform.localScale.x * PatrolSpeed * -1, myRigidbody.velocity.y);
 
@@ -101,6 +108,16 @@ public class EnemyStates : MonoBehaviour
                 Debug.Log(Player.name);
                 AutoAttack();
                 CheckDistance();
+
+                if (attackTimer < 50)
+                {
+                    attackTimer++;
+                }
+                else
+                {
+                    attackTimer = 0;
+                    currentState = States.patrol;
+                }
                 break;
 
  
@@ -119,9 +136,12 @@ public class EnemyStates : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            attackTimer = 0;
             Player = other.gameObject;
             playerFound = true;
             currentState = States.attack;
+
+            
         }
 
 
@@ -169,9 +189,6 @@ public class EnemyStates : MonoBehaviour
     {
 
         Instantiate(MagicCast, castPosition.transform.position, transform.rotation);
-
-        
-
     }
 
  

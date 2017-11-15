@@ -49,7 +49,7 @@ public class CharacterCheckPoint : MonoBehaviour {
             {
                 this.gameObject.transform.position = new Vector3(checkPointPosition.x, checkPointPosition.y, 0);
                 charStats.dead = false;
-                charStats.health = 15;
+                charStats.health = charStats.baseHealth;
                 charStats.lives--;
             }
         }
